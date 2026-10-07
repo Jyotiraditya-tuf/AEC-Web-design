@@ -1,73 +1,90 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Class Timetable</title>
 </head>
 <body>
 
-    <h2 align="center">Weekly Class Timetable</h2>
+    <table border="2" cellspacing="2" cellpadding="10" align="center">
+        <!-- Main Title Header spanning all columns -->
+        <tr bgcolor="#D9EDF7">
+            <th colspan="8">
+                <h2>DEPARTMENT OF COMPUTER SCIENCE - CLASS SCHEDULE</h2>
+            </th>
+        </tr>
 
-    <table border="2" cellspacing="3" cellpadding="10" align="center">
-        <!-- Table Header -->
-        <tr bgcolor="#E0E0E0">
-            <th>Day</th>
+        <!-- Table Columns Header -->
+        <tr bgcolor="#F2F2F2" align="center">
+            <th>Day / Time</th>
             <th>09:00 - 10:00</th>
             <th>10:00 - 11:00</th>
-            <th>11:00 - 12:00</th>
-            <th>12:00 - 01:00</th>
-            <th>01:00 - 02:00</th>
-            <th>02:00 - 03:00</th>
+            <th>11:00 - 11:15</th>
+            <th>11:15 - 12:15</th>
+            <th>12:15 - 01:15</th>
+            <th>01:15 - 02:15</th>
+            <th>02:15 - 03:15</th>
         </tr>
 
         <!-- Monday -->
         <tr align="center">
             <th>Monday</th>
             <td>Mathematics</td>
-            <td>Physics</td>
-            <td>Chemistry</td>
-            <!-- Lunch Break spanning across all 5 rows (Monday to Friday) -->
+            <td>Data Structures</td>
+            <!-- Morning Short Break spanning all 5 days -->
+            <td rowspan="5" bgcolor="#E8F5E9"><b>B<br>R<br>E<br>A<br>K</b></td>
+            <td>Digital Logic</td>
+            <!-- Lunch Break spanning all 5 days -->
             <td rowspan="5" bgcolor="#FFF3CD"><b>L<br>U<br>N<br>C<br>H</b></td>
-            <td>English</td>
-            <td>Computer Science</td>
+            <!-- 2-hour lab session using colspan -->
+            <td colspan="2" bgcolor="#E1F5FE">Web Development Lab</td>
         </tr>
 
         <!-- Tuesday -->
         <tr align="center">
             <th>Tuesday</th>
-            <td>Chemistry</td>
+            <!-- 2-hour morning lab session -->
+            <td colspan="2" bgcolor="#E1F5FE">Data Structures Lab</td>
+            <td>Computer Networks</td>
             <td>Mathematics</td>
-            <td>English</td>
-            <td>Physics</td>
-            <td>Physical Ed.</td>
+            <td>English Comm.</td>
         </tr>
 
         <!-- Wednesday -->
         <tr align="center">
             <th>Wednesday</th>
-            <td>Physics</td>
-            <td>Chemistry</td>
+            <td>Computer Networks</td>
             <td>Mathematics</td>
-            <td>Computer Science</td>
-            <td>Library</td>
+            <td>Data Structures</td>
+            <td>Operating Systems</td>
+            <td>Library / Self Study</td>
         </tr>
 
         <!-- Thursday -->
         <tr align="center">
             <th>Thursday</th>
-            <td>English</td>
-            <td>Physics</td>
-            <td>Computer Science</td>
+            <td>Digital Logic</td>
+            <td>Operating Systems</td>
             <td>Mathematics</td>
-            <td>Chemistry</td>
+            <!-- 2-hour afternoon hardware lab -->
+            <td colspan="2" bgcolor="#E1F5FE">Digital Electronics Lab</td>
         </tr>
 
         <!-- Friday -->
         <tr align="center">
             <th>Friday</th>
-            <td>Computer Science</td>
-            <td>English</td>
-            <td>Physics</td>
-            <td>Chemistry</td>
-            <td>Mathematics</td>
+            <td>Operating Systems</td>
+            <td>Computer Networks</td>
+            <td>Digital Logic</td>
+            <!-- 2-hour joint seminar session -->
+            <td colspan="2" bgcolor="#FCE4EC">Seminar / Project Presentation</td>
+        </tr>
+
+        <!-- Footer / Legend Row -->
+        <tr bgcolor="#F9F9F9" align="center">
+            <td colspan="8">
+                <small>* Note: Lab sessions span two consecutive hours (colspan=2). Attendance is mandatory.</small>
+            </td>
         </tr>
     </table>
 
