@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Background Images and Repeat</title>
+  <style>
+    /* Entire Page Background - repeating subtle pattern/texture */
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('https://picsum.photos/100/100');
+      background-repeat: repeat; /* Repeats horizontally and vertically */
+      margin: 40px;
+    }
+
+    /* Element 1: Banner with no-repeat */
+    .banner {
+      background-image: url('https://picsum.photos/600/200');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    /* Element 2: Card with horizontal repeat */
+    .strip-card {
+      background-color: white;
+      background-image: url('https://picsum.photos/50/20');
+      background-repeat: repeat-x; /* Repeats only along the X-axis */
+      background-position: top;
+      margin-top: 25px;
+      padding: 35px 20px 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      max-width: 560px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Full banner with no-repeat -->
+  <div class="banner">
+    <h1>Welcome to Our Portal</h1>
+    <p>Background image set with <code>background-repeat: no-repeat</code></p>
+  </div>
+
+  <!-- Content card with horizontal repeat -->
+  <div class="strip-card">
+    <h2>Decorative Border Card</h2>
+    <p>This box uses <code>background-repeat: repeat-x</code> along the top edge, while the full body uses <code>background-repeat: repeat</code>.</p>
+  </div>
+
+</body>
+</html>
