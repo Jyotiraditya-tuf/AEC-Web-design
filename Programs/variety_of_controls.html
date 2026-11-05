@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Form</title>
+</head>
+<body>
+
+  <h2>User Registration Form</h2>
+
+  <form>
+    <!-- 1. Text Box -->
+    <label>Name:</label><br>
+    <input type="text" name="username"><br><br>
+
+    <!-- 2. Radio Buttons -->
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female<br><br>
+
+    <!-- 3. Checkboxes -->
+    <label>Hobbies:</label><br>
+    <input type="checkbox" name="hobby" value="reading"> Reading
+    <input type="checkbox" name="hobby" value="sports"> Sports<br><br>
+
+    <!-- 4. Drop-down Menu -->
+    <label>Country:</label><br>
+    <select name="country">
+      <option value="india">India</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+    </select><br><br>
+
+    <!-- 5. List / Select Menu (Multiple / Scrollable) -->
+    <label>Skills:</label><br>
+    <select name="skills" size="3" multiple>
+      <option value="html">HTML</option>
+      <option value="css">CSS</option>
+      <option value="js">JavaScript</option>
+    </select><br><br>
+
+    <!-- 6. Submit and Reset Buttons -->
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+
+</body>
+</html>
