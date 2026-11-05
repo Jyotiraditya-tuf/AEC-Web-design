@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Styled Lists and Tables</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+
+    /* List Styling */
+    ul {
+      list-style-type: square;
+      background-color: #f2f2f2;
+      padding: 15px 30px;
+      width: 250px;
+      border-radius: 5px;
+    }
+
+    li {
+      padding: 6px 0;
+    }
+
+    /* Table Styling */
+    table {
+      width: 50%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    /* Alternate row colors for better readability */
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Styled List -->
+  <h2>Course List</h2>
+  <ul>
+    <li>Web Development</li>
+    <li>Data Structures</li>
+    <li>Database Systems</li>
+  </ul>
+
+  <!-- Styled Table -->
+  <h2>Student Details</h2>
+  <table>
+    <tr>
+      <th>Roll No</th>
+      <th>Name</th>
+      <th>Marks</th>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td>Alice</td>
+      <td>85</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>Bob</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <td>103</td>
+      <td>Charlie</td>
+      <td>78</td>
+    </tr>
+  </table>
+
+</body>
+</html>
